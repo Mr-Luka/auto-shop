@@ -13,7 +13,7 @@ export default function DiagonalHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setShowJaguar(prev => !prev);
-    }, 3000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -23,8 +23,8 @@ export default function DiagonalHero() {
     <div className="hero-wrapper">
       <div className="label" onClick={() => window.location.reload()}>
         <div className={`flip-text ${showJaguar ? 'flip' : ''}`}>
-          <span className="front">passion for LANDROVER</span>
-          <span className="back">passion for JAGUAR</span>
+          <p className="front">passion for <br/><span>LANDROVER</span></p>
+          <p className="back">passion for <br/><span>JAGUAR</span></p>
         </div>
       </div>
 
