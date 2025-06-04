@@ -1,11 +1,13 @@
 import React from 'react';
-import DiagonalReveal from './components/DiagonalReveal.jsx';
+import DiagonalHero from './components/DiagonalHero.jsx';
 import './index.css';
 
-export default function App() {
+function App() {
   return (
     <div className="app">
-      <DiagonalReveal />
+      <DiagonalHero />
     </div>
   );
 }
+
+export default App;
