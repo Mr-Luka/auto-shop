@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function HeroSection() {
+export default function DiagonalReveal() {
   const [scrollY, setScrollY] = useState(0);
   const [showJaguar, setShowJaguar] = useState(false);
 
@@ -17,25 +17,32 @@ export default function HeroSection() {
     return () => clearInterval(flipInterval);
   }, []);
 
-  const diagonalTransform = Math.min(scrollY * 0.15, 45); // Max 45deg open
-  const labelStyle = {
-    transform: scrollY > 100 ? 'translateY(-50%) scale(0.85)' : 'translateY(-50%)',
-    top: scrollY > 100 ? '0.8rem' : '50%',
-  };
+  const maxShift = 100;
+  const scrollPercent = Math.min(scrollY / window.innerHeight, 1);
+  const shift = maxShift * scrollPercent;
 
   const handleClick = () => window.location.reload();
 
   return (
-    <div className="hero-wrapper">
-      <div
-        className="diagonal-bg"
-        style={{ transform: `rotate(${diagonalTransform}deg)` }}
-      />
-
-      <div className="brand-label" onClick={handleClick} style={labelStyle}>
+    <div className="diagonal-wrapper">
+      <div className="brand-label" onClick={handleClick}>
         <div className={`flip ${showJaguar ? 'flipped' : ''}`}>
           <span className="front">passion for LANDROVER</span>
           <span className="back">passion for JAGUAR</span>
+        </div>
+      </div>
+
+      <div className="triangle orange" style={{ transform: `translate(-${shift}px, -${shift}px)` }}></div>
+      <div className="triangle black" style={{ transform: `translate(${shift}px, ${shift}px)` }}></div>
+
+      <div className="content">
+        <div className="content-inner">
+          <h2>Unser Angebot</h2>
+          <div className="service">
+            <p>🛠 Reparaturen</p>
+            <p>🚙 4x4 Ausrüstung</p>
+            <p>🏕 Camping / Zubehör</p>
+          </div>
         </div>
       </div>
     </div>
