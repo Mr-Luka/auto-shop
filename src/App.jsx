@@ -1,13 +1,15 @@
+import React from 'react';
+import DiagonalSection from './components/DiagonalSection.jsx';
+import Content from './components/Content.jsx';
+import './index.css';
 
-import './index.css'
-
-function App() {
- 
+export default function App() {
   return (
-    <>
-
-    </>
-  )
+    <div className="app">
+      <DiagonalSection />
+      <Content />
+    </div>
+  );
 }
 
-export default App
+
