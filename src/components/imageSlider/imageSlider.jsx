@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import './Portfolio-slider.css';
+import './imageSlider.css';
 
-import slides from './projects-object.js';
+import slides from './cars.js';
 
 export default function PortfolioImageSlider(){
     const [currentIndex, setCurrentIndex] = useState(0);
