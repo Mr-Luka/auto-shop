@@ -36,8 +36,12 @@ export default function DiagonalHero() {
 
       <div className="content-section">
         <div className="content-box">
-          <h2>Our Services</h2>
-          <p>Repairs, 4x4 Upgrades, Camping Gear and more...</p>
+          <h2>COMPLETE Car Care</h2>
+          <h5><span>ALL</span><br/>in one place</h5>
+          <p>We specialize in full vehicle servicing with official record entry into the Land Rover and Jaguar system.
+             Accurate diagnostics, repair of both regular and complex issues, aswell as tunning, modifications and MFK 
+             preparation.
+             <br/>We also offer vehicle purchase and sales - fast, fair and hassle-free</p>
         </div>
         <div className='cars-image-slider-container'>
           <div className='image-slider-div'>
