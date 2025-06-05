@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import ImageSlider from './imageSlider/ImageSlider.jsx';
+import {LandRoverBlack, jaguarFwhite, rangeRover} from './imageSlider/cars.js';
+
 export default function DiagonalHero() {
   const [scrollY, setScrollY] = useState(0);
   const [showJaguar, setShowJaguar] = useState(false);
@@ -35,6 +38,17 @@ export default function DiagonalHero() {
         <div className="content-box">
           <h2>Our Services</h2>
           <p>Repairs, 4x4 Upgrades, Camping Gear and more...</p>
+        </div>
+        <div className='cars-image-slider-container'>
+          <div className='image-slider-div'>
+            <ImageSlider slides={LandRoverBlack} />
+          </div>
+          <div className='image-slider-div'>
+            <ImageSlider slides={jaguarFwhite} />
+          </div>
+          <div className='image-slider-div'>
+            <ImageSlider slides={rangeRover} />
+          </div>
         </div>
       </div>
     </div>

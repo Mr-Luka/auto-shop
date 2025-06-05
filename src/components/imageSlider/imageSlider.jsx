@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import './imageSlider.css';
 
-import slides from './cars.js';
 
-export default function PortfolioImageSlider(){
+
+export default function ImageSlider({slides}){
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slideStyles = {
@@ -11,7 +11,8 @@ export default function PortfolioImageSlider(){
         width: '100%',
         height: '100%',
         backgroundPosition: 'center',
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        borderRadius: '25px',
     }
 
     function goToPrevious(){
@@ -35,7 +36,7 @@ export default function PortfolioImageSlider(){
             <div className='slider-styles'>
                 <div className='left-arrow' onClick={goToPrevious}>&#x276E;</div>
                 <div className='right-arrow' onClick={goToNext}>&#x276F;</div>
-                <div style={slideStyles}></div>
+                <div className='slide-picture' style={slideStyles}></div>
                 <div className='dots-container'>
                     {slides.map((slide, slideIndex)=> (
                         <div 

@@ -1,13 +1,13 @@
 import landRover1 from '../../assets/cars/LandRover-Defender-black/1a.jpeg';
-import landRover2 from '../../assets/cars/LandRover-Defender-black/a2.jpeg';
-import landRover3 from '../../assets/cars/LandRover-Defender-black/a3.jpeg';
-import landRover4 from '../../assets/cars/LandRover-Defender-black/a4.jpeg';
-import landRover5 from '../../assets/cars/LandRover-Defender-black/a5.jpeg';
-import landRover6 from '../../assets/cars/LandRover-Defender-black/a6.jpeg';
-import landRover7 from '../../assets/cars/LandRover-Defender-black/a7.jpeg';
-import landRover8 from '../../assets/cars/LandRover-Defender-black/a8.jpeg';
-import landRover9 from '../../assets/cars/LandRover-Defender-black/a9.jpeg';
-import landRover10 from '../../assets/cars/LandRover-Defender-black/a10.jpeg';
+import landRover2 from '../../assets/cars/LandRover-Defender-black/2a.jpeg';
+import landRover3 from '../../assets/cars/LandRover-Defender-black/3a.jpeg';
+import landRover4 from '../../assets/cars/LandRover-Defender-black/4a.jpeg';
+import landRover5 from '../../assets/cars/LandRover-Defender-black/5a.jpeg';
+import landRover6 from '../../assets/cars/LandRover-Defender-black/6a.jpeg';
+import landRover7 from '../../assets/cars/LandRover-Defender-black/7a.jpeg';
+import landRover8 from '../../assets/cars/LandRover-Defender-black/8a.jpeg';
+import landRover9 from '../../assets/cars/LandRover-Defender-black/9a.jpeg';
+import landRover10 from '../../assets/cars/LandRover-Defender-black/10a.jpeg';
 
 import jaguarFwhite1 from '../../assets/cars/Jaguar-F-PACE-white/1b.jpeg';
 import jaguarFwhite2 from '../../assets/cars/Jaguar-F-PACE-white/2b.jpeg';
@@ -25,7 +25,7 @@ import rangeRover4 from '../../assets/cars/RangeRover-Urban-black/4c.jpeg';
 
 
 
-export default LandRoverBlack = [
+const LandRoverBlack = [
     {url:landRover1, title: 'Land Rover Defender black'},
     {url:landRover2, title: 'Land Rover Defender black'},
     {url:landRover3, title: 'Land Rover Defender black'},
