@@ -54,6 +54,22 @@ export default function DiagonalHero() {
             <ImageSlider slides={rangeRover} />
           </div>
         </div>
+        <div className='service-wrapper'>
+          <h3>Service</h3>
+          <p>ICE AND ELECTRIC VEHICELS INCLUDING SERVICE RECORD DIRECTLY BY LAND ROVER AND JAGUAR DIAGNOSIS.
+            <br/>
+            -REPAIR AND COMPLEX REPAIRS INCLUDING COMPLEX ELECTRICAL FAULTS;
+            <br/>
+            -PREPERATION FOR MFK;
+            <br/>
+            -TUNING;
+            <br/>
+            -MODIFICATIONS
+            <br/>
+            -VEHICLE CHECK AND ASSISTING ADVICES IN BUYING LANDROVER OR JAGUAR VEHICLES.
+          </p>
+          <p id='free-coffee'>free coffee for customers</p>
+        </div>
       </div>
     </div>
   );
