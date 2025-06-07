@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import coffeeGif from '../../public/coffee-cup.gif';
+
 import ImageSlider from './imageSlider/ImageSlider.jsx';
 import {LandRoverBlack, jaguarFwhite, rangeRover} from './imageSlider/cars.js';
 
@@ -68,7 +70,10 @@ export default function DiagonalHero() {
             <br/>
             -VEHICLE CHECK AND ASSISTING ADVICES IN BUYING LANDROVER OR JAGUAR VEHICLES.
           </p>
-          <p id='free-coffee'>free coffee for customers</p>
+          <p id='free-coffee'>
+            free coffee for customers
+            <img src={coffeeGif} alt="coffee cup" className="coffee-gif" />  
+          </p>
         </div>
       </div>
     </div>

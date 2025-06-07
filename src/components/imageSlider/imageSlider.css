@@ -47,6 +47,8 @@
     color: orangered;
 }
 
+
+
 /* Desktop Styles */
 @media (min-width: 769px) {
     .slider-wrapper {
