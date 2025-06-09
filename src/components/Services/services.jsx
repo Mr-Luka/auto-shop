@@ -2,10 +2,10 @@ import React from 'react';
 import TiltCard from './TiltCard.jsx';
 
 import './services.css';
-import coffeeGif from '../../public/coffee-cup.gif';
-import technician from '../../public/technician.gif';
-import drill from '../../public/drill.gif';
-import carKey from '../../public/car-key.gif';
+import coffeeGif from '../../../public/coffee-cup.gif';
+import technician from '../../../public/technician.gif';
+import drill from '../../../public/drill.gif';
+import carKey from '../../../public/car-key.gif';
 
 
 export default function Services(){
