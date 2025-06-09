@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import ImageSlider from './ImageSlider/ImageSlider.jsx';
+import ImageSlider from '../components/ImageSlider/ImageSlider.jsx';
 import Services from './services.jsx';
-import {LandRoverBlack, jaguarFwhite, rangeRover} from './ImageSlider/cars.js';
+import {LandRoverBlack, jaguarFwhite, rangeRover} from '../components/ImageSlider/cars.js';
 
 export default function DiagonalHero() {
   const [scrollY, setScrollY] = useState(0);
