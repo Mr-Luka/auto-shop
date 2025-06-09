@@ -39,10 +39,10 @@
     justify-content: center;
     margin-bottom: 7rem;
     padding: 3rem 0 1rem 0;
-    background-color: rgb(250, 105, 42);
+    background-color: rgba(214, 214, 214, 0.709);
     border-radius: 55px;
     box-shadow: 15px 10px 35px rgb(251, 0, 0);
-    border: 1px solid white;
+    border: 3px solid orangered;
 }
 
 .service-gif-name{
