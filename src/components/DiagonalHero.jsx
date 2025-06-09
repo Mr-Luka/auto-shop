@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import coffeeGif from '../../public/coffee-cup.gif';
-
 import ImageSlider from './imageSlider/ImageSlider.jsx';
+import Services from './services.jsx';
 import {LandRoverBlack, jaguarFwhite, rangeRover} from './imageSlider/cars.js';
 
 export default function DiagonalHero() {
@@ -56,25 +55,7 @@ export default function DiagonalHero() {
             <ImageSlider slides={rangeRover} />
           </div>
         </div>
-        <div className='service-wrapper'>
-          <h3>Service</h3>
-          <p>ICE AND ELECTRIC VEHICELS INCLUDING SERVICE RECORD DIRECTLY BY LAND ROVER AND JAGUAR DIAGNOSIS.
-            <br/>
-            -REPAIR AND COMPLEX REPAIRS INCLUDING COMPLEX ELECTRICAL FAULTS;
-            <br/>
-            -PREPERATION FOR MFK;
-            <br/>
-            -TUNING;
-            <br/>
-            -MODIFICATIONS
-            <br/>
-            -VEHICLE CHECK AND ASSISTING ADVICES IN BUYING LANDROVER OR JAGUAR VEHICLES.
-          </p>
-          <p id='free-coffee'>
-            free coffee for customers
-            <img src={coffeeGif} alt="coffee cup" className="coffee-gif" />  
-          </p>
-        </div>
+          <Services />
       </div>
     </div>
   );

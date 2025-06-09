@@ -157,34 +157,3 @@ images sliders container
   margin-bottom: 5rem;
   padding: 0.5rem;
 }
-
-#free-coffee {
-  text-align: end;
-  margin-top: 3rem;
-  color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.5rem;
-}
-
-.coffee-gif {
-  width: 32px;
-  height: 32px;
-  mix-blend-mode: multiply; /* OR: darken */
-  background: none;
-}
-
-.service-wrapper{
-    color: white;
-    margin: 2rem 0;
-}
-
-.service-wrapper h3{
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.service-wrapper p {
-  line-height: 1.5rem;
-}
