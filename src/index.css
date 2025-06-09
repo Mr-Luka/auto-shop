@@ -4,11 +4,18 @@ body, html, .app {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
   background: rgb(255, 255, 255);
+  background-image: url('./assets/background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
+
 
 .hero-wrapper {
   height: 300vh;
@@ -100,7 +107,7 @@ body::-webkit-scrollbar {
   z-index: 1;
   margin-top: 100vh;
   padding: 4rem 2rem;
-  background: rgb(0, 0, 0);
+  /* background: rgb(0, 0, 0); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,4 +163,10 @@ images sliders container
   border-radius: 15px;
   margin-bottom: 5rem;
   padding: 0.5rem;
+}
+
+.company-name{
+  color: white;
+  font-size: 5rem;
+  background-color: red;
 }

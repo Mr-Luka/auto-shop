@@ -1,3 +1,6 @@
+import React from 'react';
+import TiltCard from './TiltCard.jsx';
+
 import './services.css';
 import coffeeGif from '../../public/coffee-cup.gif';
 import technician from '../../public/technician.gif';
@@ -28,20 +31,30 @@ export default function Services(){
                     <img src={coffeeGif} alt="coffee cup" className="coffee-gif" />  
                 </p>
             </div>
-            <div className='service2-rapper'>
-                <div className='service-gif-name'>
-                    <img src={technician} alt='technician' />
-                    <p>Repairs</p>
+            <TiltCard
+                className="table first-table"
+                options={{
+                max: 20,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.4,
+                }}
+                >
+                <div className='service2-rapper'>
+                    <div className='service-gif-name'>
+                        <img src={technician} alt='technician' />
+                        <p>Repairs</p>
+                    </div>
+                    <div className='service-gif-name'>
+                        <img src={carKey} alt='car key' />
+                        <p>4X4 Upgrades</p>
+                    </div>
+                    <div className='service-gif-name'>
+                        <img src={drill} alt='drill' />
+                        <p>Camping Gear</p>
+                    </div>
                 </div>
-                <div className='service-gif-name'>
-                    <img src={carKey} alt='car key' />
-                    <p>4X4 Upgrades</p>
-                </div>
-                <div className='service-gif-name'>
-                    <img src={drill} alt='drill' />
-                    <p>Camping Gear</p>
-                </div>
-            </div>
+            </TiltCard>
         </>
     )
 }

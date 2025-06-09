@@ -24,6 +24,7 @@ export default function DiagonalHero() {
   const shift = Math.min(scrollY, window.innerHeight); // allow full screen shift
 
   return (
+    <>
     <div className="hero-wrapper">
       <div className="label" onClick={() => window.location.reload()}>
         <div className={`flip-text ${showJaguar ? 'flip' : ''}`}>
@@ -58,5 +59,6 @@ export default function DiagonalHero() {
           <Services />
       </div>
     </div>
+  </>
   );
 }
