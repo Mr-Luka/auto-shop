@@ -1,5 +1,6 @@
 import React from 'react';
 import './contact.css';
+import Newsletter from './Newsletter';
 
 export default function Contact() {
   return (
@@ -21,6 +22,7 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
+      <Newsletter />
     </div>
   );
 }
