@@ -98,14 +98,14 @@ body::-webkit-scrollbar {
   z-index: 100;
 }
 
-.orange-panel {
-  background: #ff5b00;
+.black-panel {
+  background: black;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: 100;
 }
 
-.black-panel {
-  background: black;
+.orange-panel {
+  background: #ff5b00;
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
   z-index: 99;
 }

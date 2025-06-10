@@ -11,7 +11,7 @@ export default function DiagonalHero() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY); // ← back to window.scrollY which works
+      setScrollY(window.scrollY); // ← back to window.scrollY 
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -20,7 +20,7 @@ export default function DiagonalHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setShowJaguar(prev => !prev);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -41,8 +41,8 @@ export default function DiagonalHero() {
         </div>
 
         {/* Panels that separate */}
-        <div className="orange-panel" style={{ transform: `translate(-${shift}px, -${shift}px)` }}></div>
-        <div className="black-panel" style={{ transform: `translate(${shift}px, ${shift}px)` }}></div>
+        <div className="black-panel" style={{ transform: `translate(-${shift}px, -${shift}px)` }}></div>
+        <div className="orange-panel" style={{ transform: `translate(${shift}px, ${shift}px)` }}></div>
 
         {/* Main content */}
         <div className="content-section">

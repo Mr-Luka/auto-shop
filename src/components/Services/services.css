@@ -105,5 +105,6 @@
   .service2-rapper{
     width: 100%;
     flex-direction: row;
+    padding-bottom: 0rem;
   }
 }
