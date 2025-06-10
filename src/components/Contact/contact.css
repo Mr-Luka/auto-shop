@@ -40,10 +40,15 @@
 
 /* Desktop view */
 @media (min-width: 768px) {
+  .contact-wrapper{
+    width: 100%;
+  }
+
   .contact-container {
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+
   }
 
   .contact-map iframe {

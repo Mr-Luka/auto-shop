@@ -179,3 +179,10 @@ images sliders container
   font-size: 5rem;
   background-color: red;
 }
+
+@media (min-width: 768px) {
+  .carzip-banner{
+    font-size: 10rem;
+    left: 30%;
+  }
+}
