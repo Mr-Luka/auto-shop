@@ -18,34 +18,24 @@ body::-webkit-scrollbar {
 
 
 .hero-wrapper {
-  height: 300vh;
   position: relative;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 
 .label {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: sticky;
   width: 100%;
-  pointer-events: none; 
   z-index: 200;
-  display: flex;
-  justify-content: center;
-  height: auto;
-}
-
-.label-inner {
-  pointer-events: auto; 
-  width: 100%;
-  background: rgba(197, 197, 197, 0.17);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   color: white;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem;
   text-align: center;
-  font-weight: bold;
-  font-size: 1rem;
-  border-radius: 0;
+  pointer-events: auto;
+  touch-action: pan-y;
 }
+
 
 .flip-text {
   text-align:right;
@@ -121,6 +111,7 @@ body::-webkit-scrollbar {
 .content-box {
   width: 80%;
   margin: auto;
+  margin-bottom: 3rem;
   background: #111;
   color: rgb(191, 130, 16);
   font-size: 1.2rem;
