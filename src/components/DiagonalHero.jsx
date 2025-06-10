@@ -25,13 +25,15 @@ export default function DiagonalHero() {
 
   return (
     <>
-    <div className="hero-wrapper">
-      <div className="label" onClick={() => window.location.reload()}>
-        <div className={`flip-text ${showJaguar ? 'flip' : ''}`}>
-          <p className="front">passion for <br/><span>LANDROVER</span></p>
-          <p className="back">passion for <br/><span>JAGUAR</span></p>
+      <div className="label">
+        <div className="label-inner" onClick={() => window.location.reload()}>
+          <div className={`flip-text ${showJaguar ? 'flip' : ''}`}>
+            <p className="front">passion for <br /><span>LANDROVER</span></p>
+            <p className="back">passion for <br /><span>JAGUAR</span></p>
+          </div>
         </div>
       </div>
+    <div className="hero-wrapper">
 
       <div className="orange-panel" style={{ transform: `translate(-${shift}px, -${shift}px)` }}></div>
       <div className="black-panel" style={{ transform: `translate(${shift}px, ${shift}px)` }}></div>
