@@ -23,17 +23,31 @@ body::-webkit-scrollbar {
   -webkit-overflow-scrolling: touch;
 }
 
+.carzip-banner {
+  position: fixed;
+  top: 40%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  z-index: 150;
+  pointer-events: none;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
 .label {
-  position: sticky;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 200;
-  background: rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   color: white;
-  padding: 1rem;
   text-align: center;
-  pointer-events: auto;
-  touch-action: pan-y;
+  padding: 1rem;
 }
 
 

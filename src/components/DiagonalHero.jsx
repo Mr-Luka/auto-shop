@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import ImageSlider from './ImageSliderComponent/SliderImage.jsx';
 import Services from './Services/services.jsx';
+import Contact from './Contact/Contact.jsx';
 import { LandRoverBlack, jaguarFwhite, rangeRover } from './ImageSliderComponent/cars.js';
 
 export default function DiagonalHero() {
@@ -28,6 +29,9 @@ export default function DiagonalHero() {
   return (
     <>
       <div className="hero-wrapper">
+        <div className="carzip-banner" style={{ transform: `translateY(-${scrollY * 0.6}px)`, opacity: `${1 - scrollY / window.innerHeight}` }}>
+          carzip.ch
+        </div>
         {/* Floating label */}
         <div className="label" onClick={() => window.location.reload()}>
           <div className={`flip-text ${showJaguar ? 'flip' : ''}`}>
@@ -58,8 +62,8 @@ export default function DiagonalHero() {
             <div className="image-slider-div"><ImageSlider slides={jaguarFwhite} /></div>
             <div className="image-slider-div"><ImageSlider slides={rangeRover} /></div>
           </div>
-
           <Services />
+          <Contact />
         </div>
       </div>
     </>
