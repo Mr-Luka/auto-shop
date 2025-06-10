@@ -27,12 +27,15 @@ body::-webkit-scrollbar {
   bottom: 0;
   left: 0;
   width: 100%;
-  pointer-events: none; /* allow page scrolling through this */
+  pointer-events: none; 
   z-index: 200;
+  display: flex;
+  justify-content: center;
+  height: auto;
 }
 
 .label-inner {
-  pointer-events: auto; /* allow interaction */
+  pointer-events: auto; 
   width: 100%;
   background: rgba(197, 197, 197, 0.17);
   backdrop-filter: blur(10px);
