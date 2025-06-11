@@ -26,5 +26,43 @@
 
 .our-team p{
     width: 90%;
-    font-size: 1rem;
+}
+
+@media (min-width: 768px){
+    .team-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        border: 1px solid red;
+        padding: 2rem;
+    }
+
+    .team-wrapper h3 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 3rem;
+        margin-top: 7rem;
+        color: white;
+        margin-right: 0rem;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+  }
+
+    .our-team{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 60%;
+    }
+
+
+    .about-team{
+        width: 60%;
+        font-size: 1.5rem;
+    }
+
+    .about-team h4 span {
+    color: orange;
+  }
 }
