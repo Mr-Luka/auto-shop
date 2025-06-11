@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import ImageSlider from './ImageSliderComponent/SliderImage.jsx';
 import Services from './Services/services.jsx';
 import Contact from './Contact/Contact.jsx';
+import Team from './Team/Team.jsx';
 import { LandRoverBlack, jaguarFwhite, rangeRover } from './ImageSliderComponent/cars.js';
 
 export default function DiagonalHero() {
@@ -63,6 +64,7 @@ export default function DiagonalHero() {
             <div className="image-slider-div"><ImageSlider slides={rangeRover} /></div>
           </div>
           <Services />
+          <Team />
           <Contact />
         </div>
       </div>
