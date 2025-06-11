@@ -98,6 +98,10 @@
     font-size: 1.2rem;
   }
 
+  .service-wrapper p{
+    line-height: 2.5rem;;
+  }
+
   .service-wrapper h3{
     font-size: 2rem;
   }
