@@ -1,6 +1,9 @@
 import React from 'react';
 import './contact.css';
 import Newsletter from './Newsletter';
+import car from '../../assets/car.mp4';
+import fb from '../../assets/facebook.png';
+import instagram from '../../assets/instagram.png';
 
 export default function Contact() {
   return (
@@ -11,6 +14,22 @@ export default function Contact() {
           <p><strong>Name:</strong> John Doe</p>
           <p><strong>Phone:</strong> +41 76 123 4567</p>
           <p><strong>Email:</strong> info@carzip.ch</p>
+          <div className='social-icons'>
+            <a
+              href="https://www.instagram.com/carzip.ch/?igsh=NTc4MTIwNjQ2YQ%3D%3D#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} alt="instagram" />
+            </a>
+            <a
+              href="https://www.instagram.com/carzip.ch/?igsh=NTc4MTIwNjQ2YQ%3D%3D#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={fb} alt='facebook' />
+            </a>
+          </div>
         </div>
         <div className="contact-map">
           <iframe
@@ -22,7 +41,11 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
-      <Newsletter />
+      <div className='newsletter-with-video'>
+        <Newsletter />
+        <video className="car-video" src={car} autoPlay loop muted playsInline></video>
+      </div>
+      
     </div>
   );
 }

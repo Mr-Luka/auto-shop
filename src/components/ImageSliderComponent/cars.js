@@ -26,12 +26,12 @@ import rangeRover4 from '../../assets/cars/RangeRover-Urban-black/4c.jpeg';
 
 
 const LandRoverBlack = [
+    {url:landRover6, title: 'Land Rover Defender black'},
     {url:landRover1, title: 'Land Rover Defender black'},
     {url:landRover2, title: 'Land Rover Defender black'},
     {url:landRover3, title: 'Land Rover Defender black'},
     {url:landRover4, title: 'Land Rover Defender black'},
     {url:landRover5, title: 'Land Rover Defender black'},
-    {url:landRover6, title: 'Land Rover Defender black'},
     {url:landRover7, title: 'Land Rover Defender black'},
     {url:landRover8, title: 'Land Rover Defender black'},
     {url:landRover9, title: 'Land Rover Defender black'},
@@ -40,19 +40,19 @@ const LandRoverBlack = [
 
 
 const jaguarFwhite = [
+    {url: jaguarFwhite7, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite1, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite2, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite3, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite4, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite5, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite6, title: 'Jaguar F Pace white'},
-    {url: jaguarFwhite7, title: 'Jaguar F Pace white'},
     {url: jaguarFwhite8, title: 'Jaguar F Pace white'},
 ]
 
 const rangeRover = [
-    {url: rangeRover1, title: 'Range Rover Urban black'},
     {url: rangeRover2, title: 'Range Rover Urban black'},
+    {url: rangeRover1, title: 'Range Rover Urban black'},
     {url: rangeRover3, title: 'Range Rover Urban black'},
     {url: rangeRover4, title: 'Range Rover Urban black'},
 ]
