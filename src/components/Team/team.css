@@ -9,6 +9,7 @@
 
 .team-wrapper h3 {
     font-size: 2rem;
+    color: rgb(224, 4, 4);
 }
 
 .our-team {
@@ -24,8 +25,14 @@
     margin-bottom: 1rem;
 }
 
+.about-team h4 span {
+    color: orange;
+}
+
 .our-team p{
     width: 90%;
+    text-align: center;
+    margin-left: 1.1rem;
 }
 
 @media (min-width: 768px){
@@ -43,7 +50,6 @@
         transform: rotate(180deg);
         font-size: 3rem;
         margin-top: 7rem;
-        color: white;
         margin-right: 0rem;
         font-weight: bold;
         letter-spacing: 0.2rem;
@@ -62,7 +68,5 @@
         font-size: 1.5rem;
     }
 
-    .about-team h4 span {
-    color: orange;
-  }
+    
 }

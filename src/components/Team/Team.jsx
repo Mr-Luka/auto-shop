@@ -1,5 +1,6 @@
 import './team.css';
 import rayan from '../../assets/rajan.jpg';
+import car from '../../assets/car.mp4';
 export default function Team(){
 
     return (
@@ -13,6 +14,7 @@ export default function Team(){
                         <p>Originally from Serbia, Rayan is one of Europe's top auto mechanics, now based in Switzerland. With deep expertise in Jaguar and Land Rover vehicles, he specializes in advanced automotive electronics, diagnostics, and system repairs. Known for his precision, reliability, and passion for British engineering, Rayan brings over a decade of experience to every vehicle he touches — earning the trust of 4x4 drivers across Europe.</p>
                     </div>
                 </div>
+                <video className="car-video" src={car} autoPlay loop muted playsInline></video>
             </div>
         </>
     )
