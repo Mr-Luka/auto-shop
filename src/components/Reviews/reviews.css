@@ -7,17 +7,26 @@
   background: #f4f4f4;
   margin-bottom: 3rem;
   border-radius: 1rem;
+  background-color: rgba(9, 9, 9, 0.754);
 }
 
 .review-card {
   background: white;
   border-radius: 1rem;
   padding: 2rem;
+  color: white;
   max-width: 400px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.111);
+}
+
+.review-card:hover {
+    border: 1px solid white;
+    transform: scale(1.1);
+    background-color: rgba(55, 55, 55, 0.6);
 }
 
 .stars {
@@ -29,7 +38,7 @@
 .review-text {
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #222;
+  color: rgb(255, 255, 255);
   margin-bottom: 1.5rem;
 }
 
