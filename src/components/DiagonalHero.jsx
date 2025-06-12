@@ -4,6 +4,7 @@ import ImageSlider from './ImageSliderComponent/SliderImage.jsx';
 import Services from './Services/services.jsx';
 import Contact from './Contact/Contact.jsx';
 import Team from './Team/Team.jsx';
+import Reviews from './Reviews/Reviews.jsx';
 import { LandRoverBlack, jaguarFwhite, rangeRover } from './ImageSliderComponent/cars.js';
 
 export default function DiagonalHero() {
@@ -65,6 +66,7 @@ export default function DiagonalHero() {
           </div>
           <Services />
           <Team />
+          <Reviews />
           <Contact />
         </div>
       </div>
