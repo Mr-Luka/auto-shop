@@ -1,5 +1,5 @@
 import './reviews.css';
-import {reviews} from './peopleReviews.js';
+import reviews from './peopleReviews.js';
 
 export default function Reviews(){
 
