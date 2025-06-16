@@ -1,3 +1,6 @@
+import whatsApp from '../../assets/whatsapp.png';
+import arrowUp from '../../assets/arrow-up.png';
+
 import React, { useEffect, useState } from 'react';
 
 export default function FloatingButtons() {
@@ -27,8 +30,12 @@ export default function FloatingButtons() {
 
   return visible ? (
     <div style={styles.container}>
-      <button onClick={handleWhatsAppClick} style={styles.button}>💬</button>
-      <button onClick={handleTopClick} style={styles.button}>⬆️</button>
+      <button onClick={handleWhatsAppClick} style={styles.button}>
+        <img src={whatsApp} alt='whatsapp'/>
+      </button>
+      <button onClick={handleTopClick} style={styles.button}>
+        <img src={arrowUp} alt='arrow up' />
+      </button>
     </div>
   ) : null;
 }
