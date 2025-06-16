@@ -19,6 +19,7 @@ export default function DiagonalHero() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  //spin the passion for Jaguar/LandRover
   useEffect(() => {
     const interval = setInterval(() => {
       setShowJaguar(prev => !prev);
