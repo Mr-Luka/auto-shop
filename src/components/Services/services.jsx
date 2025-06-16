@@ -12,7 +12,7 @@ export default function Services(){
 
     return (
         <>
-            <div className='all-services-wrapper'>
+            <div id='services' className='all-services-wrapper'>
                 <div className='service-wrapper'>
                     <h3>Services</h3>
                     <p>ICE AND ELECTRIC VEHICELS INCLUDING SERVICE RECORD DIRECTLY BY LAND ROVER AND JAGUAR DIAGNOSIS.

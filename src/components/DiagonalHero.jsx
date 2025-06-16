@@ -5,6 +5,7 @@ import Services from './Services/services.jsx';
 import Contact from './Contact/Contact.jsx';
 import Team from './Team/Team.jsx';
 import Reviews from './Reviews/Reviews.jsx';
+import FloatingButtons from './FloatingButton/FloatingButton.jsx';
 import { LandRoverBlack, jaguarFwhite, rangeRover } from './ImageSliderComponent/cars.js';
 
 export default function DiagonalHero() {
@@ -69,6 +70,7 @@ export default function DiagonalHero() {
           <Team />
           <Reviews />
           <Contact />
+          <FloatingButtons />
         </div>
       </div>
     </>
